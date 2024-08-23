@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		katomic
 Summary:	katomic
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	2d3a5d1944296660536970f3f16e70f6
+# Source0-md5:	318348922952f5cc5bf57a6bfd002d1d
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -93,3 +93,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/metainfo/org.kde.katomic.appdata.xml
 %{_datadir}/knsrcfiles/katomic.knsrc
 %{_datadir}/qlogging-categories6/katomic.categories
+%{_datadir}/qlogging-categories6/katomic.renamecategories
